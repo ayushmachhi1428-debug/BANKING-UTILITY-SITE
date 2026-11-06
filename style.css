@@ -1,0 +1,185 @@
+
+/* ==========================================
+   BANKING UTILITY - ATTRACTIVE CSS
+   ========================================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+/* Heading */
+h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+label {
+    width: 420px;
+    max-width: 100%;
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input {
+    width: 420px;
+    max-width: 100%;
+
+    padding: 14px 16px;
+
+    margin-bottom: 10px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    background-color: white;
+    color: #1f2937;
+
+    font-size: 16px;
+
+    outline: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #60a5fa;
+
+    box-shadow:
+        0 0 0 4px rgba(96, 165, 250, 0.25),
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transform: translateY(-2px);
+}
+
+/* Number Input */
+input[type="number"] {
+    appearance: textfield;
+}
+
+/* Button */
+button {
+    width: 420px;
+    max-width: 100%;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(
+        135deg,
+        #16a34a,
+        #15803d
+    );
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Click */
+button:active {
+    transform: translateY(0);
+}
+
+/* Result Box */
+#result {
+    width: 420px;
+    max-width: 100%;
+
+    min-height: 80px;
+
+    margin-top: 25px;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 14px;
+
+    border-left: 5px solid #22c55e;
+
+    color: #111827;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Result Heading / Strong Text */
+#result strong {
+    color: #1e3a8a;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    label,
+    input,
+    button,
+    #result {
+        width: 100%;
+    }
+}
